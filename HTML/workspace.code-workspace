@@ -1,0 +1,12 @@
+{
+	"folders": [],
+	"extensions": {
+		"recommendations": [
+			"ritwickdey.liveserver",
+			"ritwickdey.LiveServer"
+		]
+	},
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Du_an1"
+	}
+}
