@@ -14,6 +14,6 @@ decimal e = 3;
 bool t = true;
 char kt = 'b';*/
 string Ten = "Le Thi Mai Anh";
-Console.WriteLine("Ho ten {0}",Ten);
+Console.WriteLine("Ho ten la :{0}",Ten);
 }
 }
