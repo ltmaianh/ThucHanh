@@ -6,14 +6,15 @@ private static void Main(string[] args)
 {
 
 
-/*int a = 1;
-long b = 454;
-float c = 2.3f;
-double d =3.4;
-decimal e = 3;
-bool t = true;
-char kt = 'b';*/
-string Ten = "Le Thi Mai Anh";
-Console.WriteLine("Ho ten la :{0}",Ten);
+int a,b;
+System.Console.Write("a=");
+a = Convert.ToInt32(Console.ReadLine());
+System.Console.Write("b = ");
+b = Convert.ToInt32(Console.ReadLine());
+System.Console.WriteLine("Hieu 2 so la {0} - {1}={2}",a,b,a-b);
+System.Console.WriteLine("Tich 2 so la {0} * {1}={2}",a,b,a*b);
+System.Console.WriteLine("Phan nguyen phep chia 2 so la {0} / {1}={2}",a,b,a/b);
+System.Console.WriteLine("Phan du phep chia 2 so la {0} % {1}={2}",a,b,a%b);
+
 }
 }
