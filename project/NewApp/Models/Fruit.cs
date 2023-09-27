@@ -7,7 +7,10 @@ namespace NewApp.Models{
             Ten=Console.ReadLine();
             System.Console.WriteLine("Vi Hoa qua:");
             Vi=Console.ReadLine();
-            
+        
+}
+public void HienThiThongTin(){
+    System.Console.WriteLine("{0}-{1}",Ten,Vi);
 }
 }
 }

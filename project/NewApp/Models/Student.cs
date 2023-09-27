@@ -11,8 +11,11 @@ namespace NewApp.Models{
             TenSinhVien=Console.ReadLine();
             System.Console.WriteLine("Tuoi sinh vien");
             Tuoi=Convert.ToInt32(Console.ReadLine());
-             System.Console.WriteLine("Khoa hoc:");
+            System.Console.WriteLine("Khoa hoc:");
             KhoaHoc=Console.ReadLine();
+    }
+    public void HienThiThongTin(){
+        System.Console.WriteLine("{0}-{1}-{2}-{3}",MaSinhVien, TenSinhVien, Tuoi,KhoaHoc);
     }
 }
 }
