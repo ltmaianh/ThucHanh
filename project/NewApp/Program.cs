@@ -1,5 +1,5 @@
 ﻿using System.Collections.Specialized;
 using NewApp.Models;
-Fruit frt= new Fruit();
-frt.NhapThongTin();
-frt.HienThiThongTin();
+Student std= new Student();
+std.NhapThongTin();
+std.HienThiThongTin();
