@@ -8,6 +8,9 @@ using NewApp.Models;
     public static void Main(string[]args)
     {  
         Student std = new Student();
-        std.HienThiThongTin();    
+         string MaSV = "2021050076";
+        string HoTen = "Le Thi Mai Anh";
+        string DiaChi = "Ha Noi";
+        std.ThongTin(MaSV,HoTen,DiaChi);  
     }
 }
