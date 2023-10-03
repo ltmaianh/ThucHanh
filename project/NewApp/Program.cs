@@ -4,16 +4,13 @@ public class Program
     public static void Main(string[]args)
     {
 
-        Student std = new Student();
-
-        string MaSV = "2021050076";
-        string HoTen = "Le Thi Mai Anh";
-        string DiaChi = "Ha Noi";
-       
-        int a = 21;
-
-        System.Console.WriteLine("{0} - {1} - {2} -{3}",MaSV,HoTen,DiaChi,std.NamSinhSv(a));
-
-
+        Employee emp = new Employee();
+       Employee emp2 = new Employee();
+       emp2.MaNhanVien = "2021050076"; 
+       emp2.TenNhanVien = "LeThiMaiAnh";
+       emp2.Tuoi = 21;
+       emp2.Luong = 3000000;
+       emp.HienThiThongTin();
+       emp2.HienThiThongTin();
     }
 }
