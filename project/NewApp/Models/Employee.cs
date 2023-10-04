@@ -1,14 +1,20 @@
+// Le Thi Mai Anh- 2021050076
 namespace NewApp.Models{
-    public class Employee{
+    public class Employee:Person{
          public string MaNhanVien { get; set; }
-        public string TenNhanVien { get; set; }
-        public int Tuoi { get; set; }
-        public int Luong { get; set; }
        
-        public int TinhLuong(int Luong){
-            int TLuong = Luong + 500000;
-            return TLuong;
+        
+         public void NhapThongTin()
+        {
+            base.NhapThongTin();
+            System.Console.WriteLine("Ma Nhan Vien =");
+            MaNhanVien = Console.ReadLine();  
+        }
 
+        public void HienThiThongTin()
+        {
+           base.HienThiThongTin();
+           System.Console.WriteLine("Ma nhan vien: {0}", MaNhanVien); 
         }
     }
 }
