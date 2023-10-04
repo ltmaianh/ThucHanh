@@ -7,6 +7,8 @@ public class Program
         Fruit frt= new Fruit();
         string Ten = "Tao";
         string Vi ="Ngot";
-        frt.HienThiThongTin(Ten,Vi);
+        int Gia =20000;
+        int KhoiLuong= 3;
+        System.Console.WriteLine("{0}-{1}-{2}",Ten,Vi,frt.TinhTien(Gia,KhoiLuong));
     }
 }
