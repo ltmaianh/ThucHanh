@@ -4,14 +4,8 @@ namespace NewApp.Models{
         public string TenNhanVien { get; set; }
         public int Tuoi { get; set; }
         public int Luong { get; set; }
-        public Employee()
-    {
-         string MaNhanVien = "2021050076"; 
-       string TenNhanVien = "LeThiMaiAnh";
-       int Tuoi = 21;
-       int Luong = 3000000;
-    }
-        public void HienThiThongTin(){
+       
+        public void ThongTin(string MaNhanVien,string TenNhanVien,int Tuoi,int Luong){
              System.Console.WriteLine("{0} - {1} - {2} - {3} VND", MaNhanVien, TenNhanVien, Tuoi, Luong);
         }
     }
