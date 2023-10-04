@@ -5,6 +5,8 @@ public class Program
     {
 
         Fruit frt= new Fruit();
-        frt.HienThiThongTin();
+        string Ten = "Tao";
+        string Vi ="Ngot";
+        frt.HienThiThongTin(Ten,Vi);
     }
 }

@@ -3,12 +3,9 @@ namespace NewApp.Models{
    public class Fruit{
         public string Ten { get; set; }
         public string Vi { get; set; }
-        public Fruit(){
-            Ten = "Tao";
-            Vi = "Ngot";
-        }
+    
         
-public void HienThiThongTin(){
+public void HienThiThongTin(string Ten,string Vi){
     System.Console.WriteLine("{0}-{1}",Ten,Vi);
 }
 }
