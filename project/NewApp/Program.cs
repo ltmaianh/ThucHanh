@@ -4,8 +4,8 @@ public class Program
     public static void Main(string[]args)
     {
 
-     Student std= new Student();
-      std.NhapThongTin();
-      std.HienThiThongTin();
+     Fruit frt=new Fruit();
+      frt.NhapThongTin();
+      frt.HienThiThongTin();
     }
 }
