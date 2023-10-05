@@ -4,10 +4,15 @@ namespace NewApp.Models{
         public string Ten { get; set; }
         public string Vi { get; set; }
         public int Gia { get; set; }
-        public int KhoiLuong { get; set; }
-        public int TinhTien(int Gia, int KhoiLuong){
-            int Tien = Gia * KhoiLuong;
-            return Tien;
-        }
+           public void NhapThongTin (){
+            System.Console.WriteLine("Ten hoa qua :");
+            Ten=Console.ReadLine();
+            System.Console.WriteLine("Vi Hoa qua:");
+            Vi=Console.ReadLine();
+}
+public void HienThiThongTin(){
+    System.Console.WriteLine("{0}-{1}",Ten,Vi);
+}
+
 }
 }

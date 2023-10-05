@@ -4,8 +4,8 @@ public class Program
     public static void Main(string[]args)
     {
 
-      Employee emp = new Employee();
-      emp.NhapThongTin();
-      emp.HienThiThongTin();
+      Nho nho=new Nho();
+      nho.NhapThongTin();
+      nho.HienThiThongTin();
     }
 }
