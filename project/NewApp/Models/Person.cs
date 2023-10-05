@@ -9,7 +9,12 @@ namespace NewApp.Models{
              System.Console.WriteLine("Dia chi");
             DiaChi = Console.ReadLine();
              System.Console.WriteLine("Tuoi");
+             try{
             Tuoi = Convert.ToInt32(Console.ReadLine());
+             }
+             catch (Exception e){
+               Tuoi = 0;
+             }
          }
          public void HienThiThongTin(){
             System.Console.WriteLine("{0}-{1}-{2} tuoi",HoTen,DiaChi,Tuoi);
