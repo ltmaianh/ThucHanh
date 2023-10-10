@@ -1,32 +1,33 @@
 ﻿﻿using NewApp.Models;
+//Le Thi Mai Anh-2021050076
 public class Program
 {
     public static void Main(string[]args)
     {
       int n;
 
-      Console.Write("\n" + "Nhap kich thuoc mang Employee: ");
+      Console.Write("\n" + "Nhap kich thuoc mang Student: ");
         n = Convert.ToInt32(Console.ReadLine());
-        Employee[] empArr = new Employee[n];
-        for(int i = 0; i < empArr.Length; i++){
-            Console.WriteLine("Nhap thong tin nhan vien thu {0}", i+1);
-            Employee emp = new Employee();
-            emp.NhapThongTin();
-            empArr[i] = emp;
+        Student[] stdArr = new Student[n];
+        for(int i = 0; i < stdArr.Length; i++){
+            Console.WriteLine("Nhap thong tin hoc sinh thu {0}", i+1);
+            Student std = new Student();
+            std.NhapThongTin();
+            stdArr[i] = std;
         }
-        Console.WriteLine("Hien thi mang Employee");
-        foreach(Employee emp in empArr){
-            emp.HienThiThongTin();
+        Console.WriteLine("Hien thi mang Student");
+        foreach(Student std in stdArr){
+            std.HienThiThongTin();
         }
-        string TenNhanVien = null;
-        System.Console.WriteLine($"Nhap ten nhan vien can thay doi: {TenNhanVien}");
-        TenNhanVien = Console.ReadLine();
-          for(int i = 0; i < empArr.Length; i++)
+        string TenSinhVien = null;
+        System.Console.WriteLine($"Nhap ten sinh vien can thay doi: {TenSinhVien}");
+        TenSinhVien = Console.ReadLine();
+          for(int i = 0; i < stdArr.Length; i++)
         {   
-            Employee emp = (Employee) empArr[i];
-             if ( emp.TenNhanVien == TenNhanVien){
+            Student std = (Student) stdArr[i];
+             if (std.TenSinhVien == TenSinhVien){
 
-                emp.NhapThongTin();
+                std.NhapThongTin();
                 break;
                  }else
             {
@@ -34,9 +35,9 @@ public class Program
                 break;
             }
     }
-    Console.WriteLine("Hien thi mang Employee");
-        foreach(Employee emp in empArr){
-            emp.HienThiThongTin();
+    Console.WriteLine("Hien thi mang Student");
+        foreach(Student std in stdArr){
+            std.HienThiThongTin();
 }
 }
 }
