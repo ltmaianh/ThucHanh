@@ -6,28 +6,28 @@ public class Program
     {
       int n;
 
-      Console.Write("\n" + "Nhap kich thuoc mang Student: ");
+      Console.Write("\n" + "Nhap kich thuoc mang Customer: ");
         n = Convert.ToInt32(Console.ReadLine());
-        Student[] stdArr = new Student[n];
-        for(int i = 0; i < stdArr.Length; i++){
-            Console.WriteLine("Nhap thong tin hoc sinh thu {0}", i+1);
-            Student std = new Student();
-            std.NhapThongTin();
-            stdArr[i] = std;
+        Customer[] cusArr = new Customer[n];
+        for(int i = 0; i < cusArr.Length; i++){
+            Console.WriteLine("Nhap thong tin khach hang thu {0}", i+1);
+            Customer cus = new Customer();
+            cus.NhapThongTin();
+            cusArr[i] = cus;
         }
-        Console.WriteLine("Hien thi mang Student");
-        foreach(Student std in stdArr){
-            std.HienThiThongTin();
+        Console.WriteLine("Hien thi mang Customer");
+        foreach(Customer cus in cusArr){
+            cus.HienThiThongTin();
         }
-        string TenSinhVien = null;
-        System.Console.WriteLine($"Nhap ten sinh vien can thay doi: {TenSinhVien}");
-        TenSinhVien = Console.ReadLine();
-          for(int i = 0; i < stdArr.Length; i++)
+        string TenKhachHang = null;
+        System.Console.WriteLine($"Nhap ten khach hang can thay doi: {TenKhachHang}");
+        TenKhachHang = Console.ReadLine();
+          for(int i = 0; i < cusArr.Length; i++)
         {   
-            Student std = (Student) stdArr[i];
-             if (std.TenSinhVien == TenSinhVien){
+            Customer cus = (Customer) cusArr[i];
+             if (cus.TenKhachHang == TenKhachHang){
 
-                std.NhapThongTin();
+                cus.NhapThongTin();
                 break;
                  }else
             {
@@ -35,9 +35,9 @@ public class Program
                 break;
             }
     }
-    Console.WriteLine("Hien thi mang Student");
-        foreach(Student std in stdArr){
-            std.HienThiThongTin();
+    Console.WriteLine("Hien thi mang Customer");
+        foreach(Customer cus in cusArr){
+            cus.HienThiThongTin();
 }
 }
 }
