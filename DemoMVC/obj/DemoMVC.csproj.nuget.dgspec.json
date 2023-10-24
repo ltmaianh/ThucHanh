@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PTPMQL\\Project\\NewApp\\NewApp.csproj": {}
+    "D:\\PTPMQL\\DemoMVC\\DemoMVC.csproj": {}
   },
   "projects": {
-    "D:\\PTPMQL\\Project\\NewApp\\NewApp.csproj": {
+    "D:\\PTPMQL\\DemoMVC\\DemoMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PTPMQL\\Project\\NewApp\\NewApp.csproj",
-        "projectName": "NewApp",
-        "projectPath": "D:\\PTPMQL\\Project\\NewApp\\NewApp.csproj",
+        "projectUniqueName": "D:\\PTPMQL\\DemoMVC\\DemoMVC.csproj",
+        "projectName": "DemoMVC",
+        "projectPath": "D:\\PTPMQL\\DemoMVC\\DemoMVC.csproj",
         "packagesPath": "C:\\Users\\CHAO MAI ANH\\.nuget\\packages\\",
-        "outputPath": "D:\\PTPMQL\\Project\\NewApp\\obj\\",
+        "outputPath": "D:\\PTPMQL\\DemoMVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\CHAO MAI ANH\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -49,6 +49,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
