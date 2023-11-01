@@ -8,10 +8,12 @@ namespace DemoMVC.Controllers{
         }
  [HttpPost]
 public IActionResult Index(Employee emp)
- {
-      string strResult = "Hello " + emp.FullName+" "+emp.EmployeeId;
-       ViewBag.ThongBao = strResult;
-      return View();
+            {
+
+                int TinhLuong = (emp.LuongCB) *  (emp.HeSoLuong) +emp.PhuCap;
+                string str1 = "FullName: " + " "+ emp.FullName + " " + "Luong: " + TinhLuong + "VND";
+                ViewBag.KetQuaTinhLuong = str1;
+                return View();
  }
 } 
 }
