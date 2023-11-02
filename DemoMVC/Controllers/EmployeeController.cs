@@ -10,9 +10,8 @@ namespace DemoMVC.Controllers{
 public IActionResult Index(Employee emp)
             {
 
-                int TinhLuong = (emp.LuongCB) *  (emp.HeSoLuong) +emp.PhuCap;
-                string str1 = "FullName: " + " "+ emp.FullName + " " + "Luong: " + TinhLuong + "VND";
-                ViewBag.KetQuaTinhLuong = str1;
+                string strResult = "Hello" + " "+ emp.FullName;
+                ViewBag.ThongBao = strResult;
                 return View();
  }
 } 
