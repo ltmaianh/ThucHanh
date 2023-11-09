@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace DemoMVC.Models{
     //Le Thi Mai Anh-2021050076
     public class DaiLy{
@@ -7,5 +9,9 @@ namespace DemoMVC.Models{
         public string NguoiDaiDien { get; set; }
         public string DienThoai { get; set; }
         public string MaHTPP { get; set; }
+        [ForeignKey("MaHTPP")]
+        public HeThongPhanPhoi? HeThongPhanPhoi { get; set; }
+
+        
     }
 }
