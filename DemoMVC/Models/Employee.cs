@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 //Le Thi Mai Anh-2021050076
 namespace DemoMVC.Models
 {
-    public class Employee:Preson
+    public class Employee:Person
     {
         public string EmployeeId { get; set; } 
         public int Age { get; set; }
