@@ -28,11 +28,7 @@ namespace DemoMVC.Controllers
             var model = _context.Person.ToList().ToPagedList(page ?? 1,5);
             return View(model);
         }
-        public async Task<IActionResult> Index()
-        {
-            return View(await _context.Person.ToListAsync());
-        }
-
+      
         // GET: Person/Details/5
         public async Task<IActionResult> Details(string id)
         {
